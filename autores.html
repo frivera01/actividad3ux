@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce a los investigadores y autores de la Universidad Internacional de La Rioja. Explora sus perfiles, publicaciones y áreas de especialización.">
+    <meta name="keywords" content="investigadores, autores, UNIR, perfiles académicos, publicaciones, especialización">
+    <title>Autores - UNIR Investiga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="UNIR Investiga - Página principal">
+                UNIR<strong>Investiga</strong>
+            </a>
+            <nav role="navigation" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="areas-conocimiento.html">Áreas de Conocimiento</a>
+                <a href="autores.html" aria-current="page">Autores</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            </nav>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Buscar autores, especialidades..." 
+                    aria-label="Buscar en el repositorio"
+                    autocomplete="off"
+                >
+                <div id="search-results" class="search-results-hidden" role="listbox" aria-label="Resultados de búsqueda"></div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <h1 id="hero-title">Nuestros Investigadores</h1>
+            <p>Conoce a la comunidad académica de la UNIR. Descubre investigadores especializados en diversas áreas del conocimiento.</p>
+        </section>
+
+        <section class="filters-section">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="area-filter">Filtrar por Área:</label>
+                    <select id="area-filter">
+                        <option value="">Todas las áreas</option>
+                        <option value="computacion">Ciencias de la Computación</option>
+                        <option value="ingenieria">Ingeniería</option>
+                        <option value="salud">Ciencias de la Salud</option>
+                        <option value="educacion">Educación</option>
+                        <option value="sociales">Ciencias Sociales</option>
+                        <option value="humanidades">Humanidades</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-filter">Ordenar por:</label>
+                    <select id="sort-filter">
+                        <option value="name">Nombre</option>
+                        <option value="publications">Número de publicaciones</option>
+                        <option value="citations">Citaciones</option>
+                        <option value="recent">Más recientes</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="authors-section" aria-labelledby="authors-title">
+            <h2 id="authors-title">Directorio de Investigadores</h2>
+            
+            <div class="authors-grid">
+                <!-- Dra. Elena Valdés -->
+                <div class="author-card" data-area="computacion" data-publications="12" data-citations="156">
+                    <div class="author-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <h3>Dra. Elena Valdés</h3>
+                        <p class="author-title">Profesora de Ciencias de la Computación</p>
+                        <p class="author-specialty">Inteligencia Artificial • Machine Learning • Educación Tecnológica</p>
+                        <div class="author-stats">
+                            <span class="stat">
+                                <strong>12</strong> publicaciones
+                            </span>
+                            <span class="stat">
+                                <strong>156</strong> citaciones
+                            </span>
+                        </div>
+                        <div class="author-actions">
+                            <a href="#" class="primary-button">Ver Perfil</a>
+                            <a href="#" class="secondary-button">Ver Publicaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Carlos Herrera -->
+                <div class="author-card" data-area="ingenieria" data-publications="8" data-citations="89">
+                    <div class="author-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <h3>Dr. Carlos Herrera</h3>
+                        <p class="author-title">Profesor de Ingeniería Civil</p>
+                        <p class="author-specialty">Materiales de Construcción • Estructuras • Sostenibilidad</p>
+                        <div class="author-stats">
+                            <span class="stat">
+                                <strong>8</strong> publicaciones
+                            </span>
+                            <span class="stat">
+                                <strong>89</strong> citaciones
+                            </span>
+                        </div>
+                        <div class="author-actions">
+                            <a href="#" class="primary-button">Ver Perfil</a>
+                            <a href="#" class="secondary-button">Ver Publicaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Ana Morales -->
+                <div class="author-card" data-area="salud" data-publications="15" data-citations="234">
+                    <div class="author-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <h3>Dr. Ana Morales</h3>
+                        <p class="author-title">Profesora de Medicina</p>
+                        <p class="author-specialty">Robótica Médica • Telemedicina • Innovación en Salud</p>
+                        <div class="author-stats">
+                            <span class="stat">
+                                <strong>15</strong> publicaciones
+                            </span>
+                            <span class="stat">
+                                <strong>234</strong> citaciones
+                            </span>
+                        </div>
+                        <div class="author-actions">
+                            <a href="#" class="primary-button">Ver Perfil</a>
+                            <a href="#" class="secondary-button">Ver Publicaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Miguel Ángel Rodríguez -->
+                <div class="author-card" data-area="educacion" data-publications="10" data-citations="123">
+                    <div class="author-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <h3>Dr. Miguel Ángel Rodríguez</h3>
+                        <p class="author-title">Profesor de Tecnología Educativa</p>
+                        <p class="author-specialty">Tecnología Educativa • E-learning • Pedagogía Digital</p>
+                        <div class="author-stats">
+                            <span class="stat">
+                                <strong>10</strong> publicaciones
+                            </span>
+                            <span class="stat">
+                                <strong>123</strong> citaciones
+                            </span>
+                        </div>
+                        <div class="author-actions">
+                            <a href="#" class="primary-button">Ver Perfil</a>
+                            <a href="#" class="secondary-button">Ver Publicaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dra. Laura Martínez -->
+                <div class="author-card" data-area="ingenieria" data-publications="6" data-citations="67">
+                    <div class="author-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <h3>Dra. Laura Martínez</h3>
+                        <p class="author-title">Ingeniera Industrial</p>
+                        <p class="author-specialty">Optimización de Procesos • Gestión de Calidad • Lean Manufacturing</p>
+                        <div class="author-stats">
+                            <span class="stat">
+                                <strong>6</strong> publicaciones
+                            </span>
+                            <span class="stat">
+                                <strong>67</strong> citaciones
+                            </span>
+                        </div>
+                        <div class="author-actions">
+                            <a href="#" class="primary-button">Ver Perfil</a>
+                            <a href="#" class="secondary-button">Ver Publicaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Roberto Silva -->
+                <div class="author-card" data-area="salud" data-publications="9" data-citations="98">
+                    <div class="author-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <h3>Dr. Roberto Silva</h3>
+                        <p class="author-title">Profesor de Psicología</p>
+                        <p class="author-specialty">Psicología Clínica • Terapia Cognitivo-Conductual • Salud Mental</p>
+                        <div class="author-stats">
+                            <span class="stat">
+                                <strong>9</strong> publicaciones
+                            </span>
+                            <span class="stat">
+                                <strong>98</strong> citaciones
+                            </span>
+                        </div>
+                        <div class="author-actions">
+                            <a href="#" class="primary-button">Ver Perfil</a>
+                            <a href="#" class="secondary-button">Ver Publicaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dra. Carmen López -->
+                <div class="author-card" data-area="sociales" data-publications="11" data-citations="145">
+                    <div class="author-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <h3>Dra. Carmen López</h3>
+                        <p class="author-title">Profesora de Sociología</p>
+                        <p class="author-specialty">Sociología Digital • Redes Sociales • Comunicación</p>
+                        <div class="author-stats">
+                            <span class="stat">
+                                <strong>11</strong> publicaciones
+                            </span>
+                            <span class="stat">
+                                <strong>145</strong> citaciones
+                            </span>
+                        </div>
+                        <div class="author-actions">
+                            <a href="#" class="primary-button">Ver Perfil</a>
+                            <a href="#" class="secondary-button">Ver Publicaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Javier García -->
+                <div class="author-card" data-area="humanidades" data-publications="7" data-citations="78">
+                    <div class="author-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="author-info">
+                        <h3>Dr. Javier García</h3>
+                        <p class="author-title">Profesor de Filosofía</p>
+                        <p class="author-specialty">Ética • Filosofía de la Tecnología • Bioética</p>
+                        <div class="author-stats">
+                            <span class="stat">
+                                <strong>7</strong> publicaciones
+                            </span>
+                            <span class="stat">
+                                <strong>78</strong> citaciones
+                            </span>
+                        </div>
+                        <div class="author-actions">
+                            <a href="#" class="primary-button">Ver Perfil</a>
+                            <a href="#" class="secondary-button">Ver Publicaciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>Estadísticas de Investigación</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">61</div>
+                    <div class="stat-label">Investigadores Activos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">246</div>
+                    <div class="stat-label">Publicaciones Totales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">986</div>
+                    <div class="stat-label">Citaciones Totales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Áreas de Investigación</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 Universidad Internacional de La Rioja (UNIR). Todos los derechos reservados.</p>
+            <nav class="footer-nav" aria-label="Enlaces del pie de página">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Funcionalidad específica para la página de autores
+        const areaFilter = document.getElementById('area-filter');
+        const sortFilter = document.getElementById('sort-filter');
+        const searchInput = document.getElementById('search-input');
+        const authorCards = document.querySelectorAll('.author-card');
+
+        // Filtro por área
+        areaFilter.addEventListener('change', filterAuthors);
+        sortFilter.addEventListener('change', sortAuthors);
+        searchInput.addEventListener('input', filterAuthors);
+
+        function filterAuthors() {
+            const selectedArea = areaFilter.value;
+            const searchQuery = searchInput.value.toLowerCase();
+            const selectedSort = sortFilter.value;
+
+            authorCards.forEach(card => {
+                const area = card.dataset.area;
+                const name = card.querySelector('h3').textContent.toLowerCase();
+                const specialty = card.querySelector('.author-specialty').textContent.toLowerCase();
+                const title = card.querySelector('.author-title').textContent.toLowerCase();
+
+                const matchesArea = !selectedArea || area === selectedArea;
+                const matchesSearch = !searchQuery || 
+                    name.includes(searchQuery) || 
+                    specialty.includes(searchQuery) || 
+                    title.includes(searchQuery);
+
+                if (matchesArea && matchesSearch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            sortAuthors();
+        }
+
+        function sortAuthors() {
+            const selectedSort = sortFilter.value;
+            const cardsArray = Array.from(authorCards);
+            const container = document.querySelector('.authors-grid');
+
+            cardsArray.sort((a, b) => {
+                switch(selectedSort) {
+                    case 'name':
+                        return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent);
+                    case 'publications':
+                        return parseInt(b.dataset.publications) - parseInt(a.dataset.publications);
+                    case 'citations':
+                        return parseInt(b.dataset.citations) - parseInt(a.dataset.citations);
+                    case 'recent':
+                        // Simular orden por fecha más reciente
+                        return Math.random() - 0.5;
+                    default:
+                        return 0;
+                }
+            });
+
+            // Reordenar elementos en el DOM
+            cardsArray.forEach(card => {
+                if (card.style.display !== 'none') {
+                    container.appendChild(card);
+                }
+            });
+        }
+
+        // Animación de entrada para las tarjetas
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        authorCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html> 

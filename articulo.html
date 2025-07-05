@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artículo de investigación: Impacto de la IA en la Educación Superior. Autores: Dra. Elena Valdés, Dr. Miguel Ángel Rodríguez">
+    <meta name="keywords" content="IA, educación superior, investigación, UNIR, Elena Valdés">
+    <title>Impacto de la IA en la Educación Superior - UNIR Investiga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="UNIR Investiga - Página principal">
+                UNIR<strong>Investiga</strong>
+            </a>
+            <nav role="navigation" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="#" aria-current="page">Áreas de Conocimiento</a>
+                <a href="#">Autores</a>
+                <a href="#">Sobre Nosotros</a>
+            </nav>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Buscar artículos, autores..." 
+                    aria-label="Buscar en el repositorio"
+                    autocomplete="off"
+                >
+                <div id="search-results" class="search-results-hidden" role="listbox" aria-label="Resultados de búsqueda"></div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main" class="article-main">
+        <div class="article-container">
+            <article class="article-content">
+                <header class="article-header">
+                    <h1 class="article-title">Impacto de la IA en la Educación Superior</h1>
+                    <div class="article-meta">
+                        <p class="article-authors">
+                            <strong>Autores:</strong> Dra. Elena Valdés, Dr. Miguel Ángel Rodríguez
+                        </p>
+                        <div class="article-details">
+                            <span class="publication-date">Enero 2025</span>
+                            <span class="publication-type">Artículo de Investigación</span>
+                            <span class="publication-journal">UNIR Investiga Journal, Vol. 8, No. 1</span>
+                        </div>
+                    </div>
+
+                    <div class="article-actions">
+                        <button class="primary-button" aria-label="Descargar PDF del artículo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            Descargar PDF
+                        </button>
+                        <button class="cite-button" aria-label="Citar este artículo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/>
+                            </svg>
+                            Citar
+                        </button>
+                        <button class="secondary-button" aria-label="Compartir artículo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="18" cy="5" r="3"/>
+                                <circle cx="6" cy="12" r="3"/>
+                                <circle cx="18" cy="19" r="3"/>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                            </svg>
+                            Compartir
+                        </button>
+                    </div>
+                </header>
+
+                <section class="abstract-section">
+                    <h2>Resumen</h2>
+                    <p>Este estudio examina el impacto transformador de la Inteligencia Artificial (IA) en la educación superior, analizando cómo las tecnologías emergentes están redefiniendo los métodos de enseñanza, evaluación y aprendizaje personalizado. A través de un análisis comprehensivo de casos de estudio y datos empíricos, identificamos las principales oportunidades y desafíos que presenta la integración de la IA en entornos académicos.</p>
+                    
+                    <div class="keywords">
+                        <strong>Palabras clave:</strong>
+                        <span class="keyword">Inteligencia Artificial</span>
+                        <span class="keyword">Educación Superior</span>
+                        <span class="keyword">Tecnología Educativa</span>
+                        <span class="keyword">Aprendizaje Personalizado</span>
+                    </div>
+                </section>
+
+                <section class="article-body">
+                    <h2>Introducción</h2>
+                    <p>La revolución digital ha transformado fundamentalmente la forma en que accedemos, procesamos y compartimos información. En el contexto de la educación superior, la Inteligencia Artificial emerge como una tecnología disruptiva que promete redefinir los paradigmas tradicionales de enseñanza y aprendizaje.</p>
+
+                    <h3>Objetivos del Estudio</h3>
+                    <p>Este trabajo tiene como objetivos principales:</p>
+                    <ul>
+                        <li>Analizar el estado actual de la implementación de IA en instituciones de educación superior</li>
+                        <li>Identificar las principales aplicaciones y beneficios de la IA en el contexto educativo</li>
+                        <li>Evaluar los desafíos éticos y técnicos asociados con la adopción de estas tecnologías</li>
+                        <li>Proponer un marco de referencia para la integración responsable de la IA en la educación</li>
+                    </ul>
+
+                    <h2>Metodología</h2>
+                    <p>La investigación se basó en un enfoque metodológico mixto que combinó análisis cuantitativo y cualitativo. Se realizó una revisión sistemática de la literatura, seguida de un estudio de campo en 15 universidades que han implementado soluciones de IA en sus procesos educativos.</p>
+
+                    <h2>Resultados y Discusión</h2>
+                    <p>Los resultados del estudio revelan que la IA está transformando la educación superior en múltiples dimensiones, desde la personalización del aprendizaje hasta la automatización de procesos administrativos.</p>
+
+                    <h3>Aplicaciones Principales</h3>
+                    <p>Las aplicaciones más comunes de la IA en educación superior incluyen:</p>
+                    <ul>
+                        <li><strong>Sistemas de tutoría inteligente:</strong> Plataformas que adaptan el contenido educativo a las necesidades individuales de cada estudiante</li>
+                        <li><strong>Evaluación automatizada:</strong> Herramientas que proporcionan retroalimentación inmediata y personalizada</li>
+                        <li><strong>Análisis predictivo:</strong> Sistemas que identifican estudiantes en riesgo de abandono académico</li>
+                        <li><strong>Asistentes virtuales:</strong> Chatbots que responden consultas frecuentes y proporcionan apoyo administrativo</li>
+                    </ul>
+
+                    <h2>Conclusiones</h2>
+                    <p>La integración de la IA en la educación superior presenta oportunidades significativas para mejorar la calidad y accesibilidad de la educación. Sin embargo, es fundamental abordar los desafíos éticos y técnicos asociados para garantizar una implementación responsable y equitativa.</p>
+                </section>
+
+                <section class="references-section">
+                    <h2>Referencias</h2>
+                    <ol class="references-list">
+                        <li>Baker, T., & Smith, L. (2024). Artificial Intelligence in Education: A Comprehensive Review. <em>Educational Technology Research</em>, 45(2), 123-145.</li>
+                        <li>García, M., & López, R. (2024). Personalized Learning through AI: Challenges and Opportunities. <em>Journal of Educational Innovation</em>, 12(3), 67-89.</li>
+                        <li>Chen, H., & Wang, Y. (2023). Ethical Considerations in AI-Driven Education. <em>International Journal of Educational Technology</em>, 8(1), 34-56.</li>
+                    </ol>
+                </section>
+            </article>
+
+            <aside class="article-sidebar">
+                <div class="sidebar-section">
+                    <h3>Artículos Relacionados</h3>
+                    <ul class="related-articles">
+                        <li>
+                            <a href="#" class="related-article-link">
+                                <h4>Machine Learning en la Evaluación Educativa</h4>
+                                <p>Dr. Ana Morales • Diciembre 2024</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="related-article-link">
+                                <h4>Chatbots Educativos: Implementación y Resultados</h4>
+                                <p>Dr. Carlos Herrera • Noviembre 2024</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="related-article-link">
+                                <h4>Ética en la IA Educativa</h4>
+                                <p>Dra. Elena Valdés • Octubre 2024</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Métricas del Artículo</h3>
+                    <div class="article-metrics">
+                        <div class="metric">
+                            <span class="metric-value">1,247</span>
+                            <span class="metric-label">Descargas</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">23</span>
+                            <span class="metric-label">Citaciones</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">4.8</span>
+                            <span class="metric-label">Valoración</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Información de los Autores</h3>
+                    <div class="author-info">
+                        <div class="author">
+                            <h4>Dra. Elena Valdés</h4>
+                            <p>Profesora de Ciencias de la Computación<br>
+                            Universidad Internacional de La Rioja</p>
+                            <a href="#" class="author-link">Ver perfil completo</a>
+                        </div>
+                        <div class="author">
+                            <h4>Dr. Miguel Ángel Rodríguez</h4>
+                            <p>Profesor de Tecnología Educativa<br>
+                            Universidad Internacional de La Rioja</p>
+                            <a href="#" class="author-link">Ver perfil completo</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 Universidad Internacional de La Rioja (UNIR). Todos los derechos reservados.</p>
+            <nav class="footer-nav" aria-label="Enlaces del pie de página">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Modal de Citación -->
+    <div id="citation-modal" class="modal-hidden" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-button" aria-label="Cerrar modal">&times;</button>
+            <h3 id="modal-title">Citar Artículo</h3>
+            <div class="citation-format">
+                <strong>Formato APA 7:</strong>
+                <p>Valdés, E., & Rodríguez, M. A. (2025). Impacto de la IA en la Educación Superior. <em>UNIR Investiga Journal</em>, <em>8</em>(1), 1-15.</p>
+            </div>
+            <div class="citation-actions">
+                <button class="copy-button" aria-label="Copiar cita al portapapeles">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    Copiar Cita
+                </button>
+                <button class="secondary-button" aria-label="Descargar cita en formato BibTeX">
+                    Descargar BibTeX
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

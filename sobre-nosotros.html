@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce más sobre la Universidad Internacional de La Rioja y nuestro repositorio de investigación. Descubre nuestra misión, visión y compromiso con la excelencia académica.">
+    <meta name="keywords" content="UNIR, Universidad Internacional de La Rioja, investigación, misión, visión, valores, repositorio académico">
+    <title>Sobre Nosotros - UNIR Investiga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="UNIR Investiga - Página principal">
+                UNIR<strong>Investiga</strong>
+            </a>
+            <nav role="navigation" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="areas-conocimiento.html">Áreas de Conocimiento</a>
+                <a href="autores.html">Autores</a>
+                <a href="sobre-nosotros.html" aria-current="page">Sobre Nosotros</a>
+            </nav>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Buscar en el repositorio..." 
+                    aria-label="Buscar en el repositorio"
+                    autocomplete="off"
+                >
+                <div id="search-results" class="search-results-hidden" role="listbox" aria-label="Resultados de búsqueda"></div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <h1 id="hero-title">Sobre UNIR Investiga</h1>
+            <p>El repositorio de investigación de la Universidad Internacional de La Rioja, comprometido con la difusión del conocimiento y la excelencia académica.</p>
+        </section>
+
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>Nuestra Misión</h2>
+                    <p>UNIR Investiga nace con el compromiso de visibilizar y democratizar el acceso a la investigación generada por nuestra comunidad académica. Creemos en el poder transformador del conocimiento y en la importancia de compartir los avances científicos con la sociedad global.</p>
+                    
+                    <h2>Nuestra Visión</h2>
+                    <p>Aspiramos a ser un referente internacional en la difusión de investigación de calidad, facilitando la colaboración entre investigadores, estudiantes y profesionales de todo el mundo. Buscamos crear un ecosistema digital que impulse la innovación y el desarrollo científico.</p>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <h2>Nuestros Valores</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Excelencia</h3>
+                    <p>Mantenemos los más altos estándares de calidad en todas nuestras publicaciones y procesos de investigación.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Colaboración</h3>
+                    <p>Fomentamos la cooperación entre investigadores, instituciones y disciplinas para generar conocimiento más robusto.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <h3>Innovación</h3>
+                    <p>Promovemos la investigación de vanguardia y el desarrollo de nuevas metodologías y tecnologías.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Accesibilidad</h3>
+                    <p>Garantizamos el acceso libre y gratuito al conocimiento científico para toda la comunidad global.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="unir-section">
+            <h2>La Universidad Internacional de La Rioja</h2>
+            <div class="unir-content">
+                <div class="unir-text">
+                    <p>La Universidad Internacional de La Rioja (UNIR) es una institución de educación superior comprometida con la excelencia académica y la innovación educativa. Fundada en 2009, hemos establecido un modelo educativo único que combina la tradición universitaria con las tecnologías más avanzadas.</p>
+                    
+                    <h3>Nuestro Compromiso con la Investigación</h3>
+                    <p>En UNIR, la investigación es un pilar fundamental de nuestra misión educativa. Contamos con más de 60 investigadores activos distribuidos en 6 áreas de conocimiento, generando conocimiento de impacto internacional.</p>
+                    
+                    <div class="unir-stats">
+                        <div class="unir-stat">
+                            <strong>2009</strong>
+                            <span>Año de fundación</span>
+                        </div>
+                        <div class="unir-stat">
+                            <strong>50,000+</strong>
+                            <span>Estudiantes</span>
+                        </div>
+                        <div class="unir-stat">
+                            <strong>100+</strong>
+                            <span>Países</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="unir-image">
+                    <div class="image-placeholder">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Equipo del Repositorio</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Dr. Alejandro Fernández</h3>
+                    <p class="member-role">Director del Repositorio</p>
+                    <p class="member-description">Especialista en gestión de información científica y sistemas de repositorios académicos.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Dra. María González</h3>
+                    <p class="member-role">Coordinadora de Contenido</p>
+                    <p class="member-description">Responsable de la calidad editorial y la gestión de publicaciones científicas.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Ing. Carlos Ruiz</h3>
+                    <p class="member-role">Desarrollador Senior</p>
+                    <p class="member-description">Especialista en desarrollo web y sistemas de gestión de repositorios digitales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span>investiga@unir.net</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>+34 941 209 743</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Av. de la Paz, 137, 26006 Logroño, La Rioja, España</span>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form class="contact-form-content">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="primary-button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 Universidad Internacional de La Rioja (UNIR). Todos los derechos reservados.</p>
+            <nav class="footer-nav" aria-label="Enlaces del pie de página">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Funcionalidad específica para la página sobre nosotros
+        document.querySelector('.contact-form-content').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envío del formulario
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            
+            submitButton.textContent = 'Enviando...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                submitButton.textContent = '¡Mensaje Enviado!';
+                submitButton.style.backgroundColor = 'var(--success)';
+                
+                setTimeout(() => {
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                    submitButton.style.backgroundColor = '';
+                    this.reset();
+                }, 2000);
+            }, 1500);
+        });
+
+        // Animación de entrada para las secciones
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.value-card, .team-member, .about-content, .unir-content').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html> 

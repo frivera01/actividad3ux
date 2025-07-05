@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Repositorio de investigación de la Universidad Internacional de La Rioja. Descubre publicaciones, artículos y trabajos de nuestra comunidad académica.">
+    <meta name="keywords" content="UNIR, investigación, publicaciones, artículos académicos, universidad">
+    <title>UNIR Investiga - Repositorio de Investigación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo" aria-label="UNIR Investiga - Página principal">
+                UNIR<strong>Investiga</strong>
+            </a>
+            <nav role="navigation" aria-label="Navegación principal">
+                <a href="#" aria-current="page">Inicio</a>
+                <a href="areas-conocimiento.html">Áreas de Conocimiento</a>
+                <a href="autores.html">Autores</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            </nav>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Buscar artículos, autores..." 
+                    aria-label="Buscar en el repositorio"
+                    autocomplete="off"
+                >
+                <div id="search-results" class="search-results-hidden" role="listbox" aria-label="Resultados de búsqueda"></div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <h1 id="hero-title">Visibilidad y Acceso a la Investigación de la UNIR</h1>
+            <p>Descubre los últimos avances y publicaciones de nuestra comunidad académica. Explora investigaciones innovadoras en diversas áreas del conocimiento.</p>
+        </section>
+
+        <section class="publications-section" aria-labelledby="publications-title">
+            <h2 id="publications-title">Publicaciones Recientes</h2>
+            <div class="grid-container">
+                <article class="article-card" role="article">
+                    <h3>Impacto de la IA en la Educación Superior</h3>
+                    <p><strong>Autores:</strong> Dra. Elena Valdés, Dr. Miguel Ángel Rodríguez</p>
+                    <p class="article-meta">
+                        <span class="publication-date">Enero 2025</span>
+                        <span class="publication-type">Artículo de Investigación</span>
+                    </p>
+                    <div class="card-actions">
+                        <button class="cite-button" aria-label="Citar este artículo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/>
+                            </svg>
+                            Citar
+                        </button>
+                        <a href="articulo.html" aria-label="Leer artículo completo">
+                            Leer más
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-card" role="article">
+                    <h3>Nuevos Materiales en Ingeniería Civil</h3>
+                    <p><strong>Autores:</strong> Dr. Carlos Herrera, Ing. Laura Martínez</p>
+                    <p class="article-meta">
+                        <span class="publication-date">Diciembre 2024</span>
+                        <span class="publication-type">Artículo de Investigación</span>
+                    </p>
+                    <div class="card-actions">
+                        <button class="cite-button" aria-label="Citar este artículo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/>
+                            </svg>
+                            Citar
+                        </button>
+                        <a href="articulo.html" aria-label="Leer artículo completo">
+                            Leer más
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-card" role="article">
+                    <h3>Robótica Aplicada a la Medicina</h3>
+                    <p><strong>Autores:</strong> Dr. Ana Morales, Dr. Roberto Silva</p>
+                    <p class="article-meta">
+                        <span class="publication-date">Noviembre 2024</span>
+                        <span class="publication-type">Artículo de Investigación</span>
+                    </p>
+                    <div class="card-actions">
+                        <button class="cite-button" aria-label="Citar este artículo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/>
+                            </svg>
+                            Citar
+                        </button>
+                        <a href="articulo.html" aria-label="Leer artículo completo">
+                            Leer más
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 Universidad Internacional de La Rioja (UNIR). Todos los derechos reservados.</p>
+            <nav class="footer-nav" aria-label="Enlaces del pie de página">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Modal de Citación -->
+    <div id="citation-modal" class="modal-hidden" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-button" aria-label="Cerrar modal">&times;</button>
+            <h3 id="modal-title">Citar Artículo</h3>
+            <div class="citation-format">
+                <strong>Formato APA 7:</strong>
+                <p>Valdés, E., & Rodríguez, M. A. (2025). Impacto de la IA en la Educación Superior. <em>UNIR Investiga Journal</em>, <em>8</em>(1), 1-15.</p>
+            </div>
+            <div class="citation-actions">
+                <button class="copy-button" aria-label="Copiar cita al portapapeles">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    Copiar Cita
+                </button>
+                <button class="secondary-button" aria-label="Descargar cita en formato BibTeX">
+                    Descargar BibTeX
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
